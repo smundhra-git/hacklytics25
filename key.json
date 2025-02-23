@@ -1,0 +1,13 @@
+{
+    "installed": {
+      "client_id": "1034447378302-1sv65j51ruq47k4eqgnpkuarb6en1nba.apps.googleusercontent.com",
+      "project_id": "adamai-451622",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_secret": "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",
+      "redirect_uris": [
+        "http://localhost"
+      ]
+    }
+  }

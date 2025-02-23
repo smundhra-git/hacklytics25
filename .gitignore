@@ -1,0 +1,70 @@
+# Environment and secrets
+.env
+*.env
+token.json
+slack_token.json
+key.pem
+cert.pem
+private.key
+private.key.pub
+private.key.pub.pem
+private.key.pem
+private.key.pub.pem
+private.key.pem
+key.json
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-selfcheck.json
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Data files
+data/
+src/data/
+
+# Logs
+*.log
+logs/
+
+# Build and distribution
+dist/
+build/
+*.exe
+*.dll
+*.msi
+*.zip
+*.tar.gz
+*.whl
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local development
+.DS_Store
+Thumbs.db
