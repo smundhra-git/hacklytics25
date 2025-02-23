@@ -6,13 +6,17 @@ import requests
 from datetime import datetime, timedelta
 import re
 
+from dotenv import load_dotenv
+
+load_dotenv()
 # Configuration
-INTEGRATION_KEY = "4a7751f7-ad67-4887-90d5-df13303cfa43"
+INTEGRATION_KEY = os.getenv("INTEGRATION_KEY")
 PRIVATE_KEY_PATH = "private.key"  # Path to your private key file
-USER_ID = "249b8f1d-3f83-4eab-8be2-569b7dca8272"   # DocuSign user ID
-BASE_URI = "https://demo.docusign.net/restapi"  # Use "https://www.docusign.net/restapi" for production
+USER_ID = os.getenv("USER_ID")   # DocuSign user ID
+BASE_URI = os.getenv("BASE_URI")  # Use "https://www.docusign.net/restapi" for production
 AUTHENTICATION_URI = f"{BASE_URI}/oauth/token"
-ENVELOPE_CREATE_URI = f"{BASE_URI}/v2.1/accounts/33395373/envelopes"
+ACCOUNT_ID = os.getenv("ACCOUNT_ID")
+ENVELOPE_CREATE_URI = f"{BASE_URI}/v2.1/accounts/{ACCOUNT_ID}/envelopes"
 
 def get_jwt_token():
     private_key = open(PRIVATE_KEY_PATH, 'r').read().strip()
